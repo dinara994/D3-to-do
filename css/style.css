@@ -1,0 +1,81 @@
+* {
+
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(255, 240, 245);
+    font-size: 1.4rem;
+    font-family: "Caladea", serif;
+}
+main {
+    width: 70%;
+    max-width: 60rem;
+    margin: auto;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+/*@media(min-width:768px) {*/
+/*    display: grid;*/
+/*    align-items: self-end;*/
+/*    grid-template-columns: 41.5% 1fr;*/
+/*    grid-template-rows: auto max-content;*/
+/*    padding: 0;*/
+/*}*/
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #73204f;
+    margin: 4rem 0 1rem;
+/*@media (min-width:768px) {*/
+/*    font-size: 4.6rem;*/
+/*    position: absolute;*/
+/*    transform: rotate(90deg);*/
+/*    transform-origin: 0 0;*/
+/*    align-self: start;*/
+/*    left: 49%;*/
+/*    margin: 0;*/
+/*    z-index: 1;*/
+/*}*/
+}
+
+.done {
+    opacity: 0.6;
+}
+label {
+    text-decoration: line-through;
+}
+.done:hover {
+    opacity: 1;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.line-through{
+    text-decoration: line-through;
+}
+
+
+::-webkit-input-placeholder {
+    color: #f2a899;
+}
+:-ms-input-placeholder {
+    color: #f2a899;
+}
+input {
+    box-shadow: none;
+    width: 100%;
+    padding: 15px 18px;
+    background: #fff;
+    border: 2px solid #f2a899;
+    font: 1.6rem "Caladea", serif;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline-color: rgba(115 72 39, 0.4);
+}
