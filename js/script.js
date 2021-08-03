@@ -5,7 +5,7 @@ const list = document.querySelector('.list')
 
  addBtn.addEventListener('click', () => { //
     if (textInput.value.trim()) { //убрать пробелы и пустую строку
-        const template = `<li>
+        const template = `<li class="group-btn">
                             <input type="checkbox" class="done"> 
                             ${textInput.value} 
                             <button class="del-btn">Удалить</button>
